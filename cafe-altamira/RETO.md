@@ -46,3 +46,10 @@ lista de verificación y demuestras que se cumple.
 ## Mi lista de verificación
 
 <!-- Escribe aquí tus 5 o más verificaciones -->
+
+- [x] Dado que estoy en `eventos.html`, cuando reviso la estructura, entonces encuentro un único `<h1>` y los encabezados siguen el orden h1, h2 y h3.
+- [x] Dado que estoy en la página, cuando busco las actividades, entonces encuentro tres catas dentro de elementos `<article>`.
+- [x] Dado que consulto la fecha de cada cata, cuando inspecciono su código, entonces cada una utiliza `<time>` con el atributo `datetime` en formato de fecha y hora.
+- [x] Dado que reviso el formulario, cuando identifico los campos, entonces nombre y correo tienen etiquetas `<label>` asociadas y el atributo `required`.
+- [x] Dado que debo elegir una actividad, cuando reviso las opciones, entonces los tres botones radio comparten el mismo atributo `name` y están agrupados en `<fieldset>` con `<legend>`.
+- [x] Dado que reviso las imágenes, cuando inspecciono sus atributos, entonces las imágenes informativas tienen texto alternativo descriptivo y la decorativa tiene `alt=""`.
