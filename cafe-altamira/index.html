@@ -35,7 +35,7 @@
 
   <!-- TODO G1 (parte 2): este div es el contenido principal.
        Conviértelo en <main id="contenido"> (y cierra con </main>). -->
-  <main class="contenido">
+  <main id="contenido">
 
     <!-- TODO G1 (parte 3): el título de la portada es un div con letra grande.
          Debe ser el ÚNICO <h1> de la página. -->
@@ -118,17 +118,32 @@
        - El horario es una tabla de datos: <table> con <caption>,
          y celdas de encabezado <th scope="col"> / <th scope="row">.
        ============================================================ -->
-  <div class="pie">
+  <footer>
     <div>
       <div class="pie-titulo">Visítanos</div>
-      <div>Carrera 7 # 12-45, Santuario, Risaralda</div>
-      <div>Tel. 606 368 0000</div>
+      <address>Carrera 7 # 12-45, Santuario, Risaralda</address>
+      <address>Tel. 606 368 0000</address>
     </div>
-    <div>
-      <div class="pie-titulo">Horario</div>
-      <div>Lunes a viernes: 8:00 a. m. – 6:00 p. m.</div>
-      <div>Sábados: 9:00 a. m. – 2:00 p. m.</div>
-    </div>
-  </div>
+    <table>
+      <caption class="pie-titulo">Horario</caption>
+        <thead>
+          <tr>
+            <th scope="col">Días</th>
+            <th scope="col">Horas de atención</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lunes a viernes</th>
+            <td>8:00 a. m. – 6:00 p. m.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sábados</th>
+            <td>9:00 a. m. – 2:00 p. m.</td>
+          </tr>
+        </tbody>
+    </table>
+  </footer>
 </body>
 </html>
+
