@@ -101,16 +101,16 @@
          - El campo de correo necesita: <label for="...">, type="email", id y required.
          - El "botón" es un div con onclick: cámbialo por <button type="submit">.
          ============================================================ -->
-    <div class="seccion" id="suscripcion">
-      <div class="subtitulo">Recibe nuestras novedades</div>
-      <div class="formulario">
-        <input type="text" placeholder="Tu correo">
-        <div class="boton" onclick="alert('¡Gracias!')">Suscribirme</div>
-      </div>
-    </div>
+    <section id="suscripcion" class="seccion">
+      <h2>Recibe nuestras novedades</h2>
+      <form>
+        <label for="correito">Nombre de usuario:</label>
+        <input type="email" id="correito" placeholder="Tu correo" required>
+        <button type="submit" class="boton" onclick="alert('¡Gracias!')">Suscribirme</button>
+      </form>
+    </section>
 
-  </div>
-
+  </main>
   <!-- ============================================================
        TODO G4 · Pie de página
        - El contenedor debe ser <footer>.
