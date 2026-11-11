@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catas de café · Café Altamira</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <a class="logo" href="index.html">
+      <img src="img/grano.svg" alt="" width="28" height="28">
+      Café Altamira
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="index.html#suscripcion">Suscripción</a></li>
+        <li><a href="eventos.html" aria-current="page">Catas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <h1>Vive la experiencia del café</h1>
+      <p>Conoce nuestros procesos, aromas y sabores en las catas de Café Altamira.</p>
+    </section>
+
+    <section class="seccion" aria-labelledby="catas-titulo">
+      <h2 id="catas-titulo">Próximas catas</h2>
+      <div class="productos">
+        <article class="producto">
+          <img src="img/cafe-clasico.svg" alt="Bolsa de café Altamira Clásico, de notas achocolatadas" width="300" height="220">
+          <h3>Descubriendo el café clásico</h3>
+          <p><time datetime="2026-11-20T16:00">20 de noviembre de 2026, 4:00 p. m.</time></p>
+          <p>Aprende a reconocer notas de chocolate y panela en una preparación guiada.</p>
+          <p><strong>Cupos:</strong> 12 personas</p>
+          <p class="precio"><strong>Precio:</strong> $25.000 por persona</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/cafe-geisha.svg" alt="Presentación del café Geisha de Altura" width="300" height="220">
+          <h3>Aromas del café Geisha</h3>
+          <p><time datetime="2026-11-22T10:00">22 de noviembre de 2026, 10:00 a. m.</time></p>
+          <p>Explora sus aromas florales y frutales y conoce qué hace especial a esta variedad.</p>
+          <p><strong>Cupos:</strong> 8 personas</p>
+          <p class="precio"><strong>Precio:</strong> $40.000 por persona</p>
+        </article>
+
+        <article class="producto">
+          <img src="img/cafe-honey.svg" alt="Café Honey La Esmeralda, de notas dulces y frutales" width="300" height="220">
+          <h3>El proceso Honey</h3>
+          <p><time datetime="2026-11-28T15:00">28 de noviembre de 2026, 3:00 p. m.</time></p>
+          <p>Compara sabores y descubre cómo el proceso Honey influye en la taza.</p>
+          <p><strong>Cupos:</strong> 10 personas</p>
+          <p class="precio"><strong>Precio:</strong> $30.000 por persona</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="inscripcion-titulo">
+      <h2 id="inscripcion-titulo">Inscríbete a una cata</h2>
+      <form class="formulario" action="#" method="get">
+        <div>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </div>
+
+        <fieldset>
+          <legend>Selecciona la cata a la que deseas asistir</legend>
+          <div>
+            <input type="radio" id="cata-clasico" name="cata" value="clasico" required>
+            <label for="cata-clasico">Descubriendo el café clásico</label>
+          </div>
+          <div>
+            <input type="radio" id="cata-geisha" name="cata" value="geisha">
+            <label for="cata-geisha">Aromas del café Geisha</label>
+          </div>
+          <div>
+            <input type="radio" id="cata-honey" name="cata" value="honey">
+            <label for="cata-honey">El proceso Honey</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <input type="checkbox" id="datos" name="datos" required>
+          <label for="datos">Acepto el tratamiento de datos</label>
+        </div>
+
+        <button type="submit" class="boton">Enviar inscripción</button>
+      </form>
+      <img src="img/grano.svg" alt="" width="1" height="1" aria-hidden="true">
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div>
+      <h2>Visítanos</h2>
+      <address>Carrera 7 # 12-45, Santuario, Risaralda</address>
+      <address>Tel. 606 368 0000</address>
+    </div>
+    <div>
+      <h2>Café Altamira</h2>
+      <p>Un café especial, cultivado en las montañas de Risaralda.</p>
+      <a href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+</body>
+</html>
